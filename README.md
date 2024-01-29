@@ -3,6 +3,69 @@
 ## Overview
 The GCP Migration Assistant and Analyzer Tool is an open-source solution designed to help organizations migrate their existing infrastructure, applications, and data to Google Cloud Platform (GCP). This comprehensive tool simplifies the planning, execution, and optimization of cloud migration processes.
 
+```mermaid
+graph TD
+    subgraph Planning
+        AS[AssessmentService] --> PS[PlanningService]
+        PS --> RA[ResourceAllocator]
+        PS --> TG[TimelineGenerator]
+        PS --> CI[ChallengeIdentifier]
+    end
+
+    subgraph Migration
+        PS --> CS[ContainerizationService]
+        PS --> DTT[DataTransferTool]
+        PS --> DMS[DataMigrationService]
+        PS --> NC[NetworkConfigurator]
+    end
+
+    subgraph Optimization
+        OS[OptimizationService] --> MC[MonitoringClient]
+        OS --> DC[DashboardsClient]
+    end
+
+    subgraph Rollback
+        RS[RollbackService] --> SC[StorageClient]
+        RS --> CC[ComputeClient]
+    end
+
+    subgraph Integration
+        KI[KubernetesIntegration]
+        CRI[CloudRunIntegration]
+    end
+
+    subgraph Security
+        SecC[SecurityConfigurator] --> SCC[SecurityCenterClient]
+    end
+
+    subgraph Reporting
+        RT[ReportingTool]
+    end
+
+    subgraph Training
+        TM[TrainingModule]
+    end
+
+    subgraph CostEstimation
+        CE[CostEstimator] --> CompC[ComputeClient]
+        CE --> BC[BillingClient]
+    end
+
+    subgraph Monitoring
+        MMS[MigrationMonitoringService]
+    end
+
+    PS --> RT
+    PS --> OS
+    PS --> RS
+    PS --> KI
+    PS --> CRI
+    PS --> SecC
+    PS --> TM
+    PS --> CE
+    PS --> MMS
+```
+
 ## Key Features
 
 - **Migration Readiness Assessment**: Evaluates your current IT setup to determine cloud readiness, compatibility issues, estimated costs, and potential migration challenges.
