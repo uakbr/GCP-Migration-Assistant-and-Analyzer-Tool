@@ -1,72 +1,45 @@
-#GCP MigrationPro
+<br/>
+<p align="center">
+  <a href="https://github.com/uakbr/GCP-MigrationPro">
+    <img src="https://i.imgur.com/fJ7f7qY.png" alt="Logo" width="80" height="80">
+  </a>
 
-## GCP Migration Assistant and Analyzer Tool
+  <h3 align="center">Google Cloud Platform Migration Pro</h3>
 
-## Overview
+  <p align="center">
+    Streamline your cloud migration journey with an all-in-one solution for transitioning to Google Cloud Platform.
+    <br/>
+    <br/>
+    <a href="https://github.com/uakbr/GCP-MigrationPro"><strong>Explore the docs »</strong></a>
+    <br/>
+    <br/>
+    <a href="https://github.com/uakbr/GCP-MigrationPro/issues">Report Bug</a>
+    .
+    <a href="https://github.com/uakbr/GCP-MigrationPro/issues">Request Feature</a>
+  </p>
+</p>
+
+![Downloads](https://img.shields.io/github/downloads/uakbr/GCP-MigrationPro/total) ![Contributors](https://img.shields.io/github/contributors/uakbr/GCP-MigrationPro?color=dark-green) ![Issues](https://img.shields.io/github/issues/uakbr/GCP-MigrationPro) ![License](https://img.shields.io/github/license/uakbr/GCP-MigrationPro) 
+
+## Table Of Contents
+
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
+
+## About The Project
+
+![Screen Shot](https://storage.googleapis.com/gweb-cloudblog-publish/images/move_data.max-1100x1100.png)
+
 The GCP Migration Assistant and Analyzer Tool is an open-source solution designed to help organizations migrate their existing infrastructure, applications, and data to Google Cloud Platform (GCP). This comprehensive tool simplifies the planning, execution, and optimization of cloud migration processes.
-
-```mermaid
-graph TD
-    subgraph Planning
-        AS[AssessmentService] --> PS[PlanningService]
-        PS --> RA[ResourceAllocator]
-        PS --> TG[TimelineGenerator]
-        PS --> CI[ChallengeIdentifier]
-    end
-
-    subgraph Migration
-        PS --> CS[ContainerizationService]
-        PS --> DTT[DataTransferTool]
-        PS --> DMS[DataMigrationService]
-        PS --> NC[NetworkConfigurator]
-    end
-
-    subgraph Optimization
-        OS[OptimizationService] --> MC[MonitoringClient]
-        OS --> DC[DashboardsClient]
-    end
-
-    subgraph Rollback
-        RS[RollbackService] --> SC[StorageClient]
-        RS --> CC[ComputeClient]
-    end
-
-    subgraph Integration
-        KI[KubernetesIntegration]
-        CRI[CloudRunIntegration]
-    end
-
-    subgraph Security
-        SecC[SecurityConfigurator] --> SCC[SecurityCenterClient]
-    end
-
-    subgraph Reporting
-        RT[ReportingTool]
-    end
-
-    subgraph Training
-        TM[TrainingModule]
-    end
-
-    subgraph CostEstimation
-        CE[CostEstimator] --> CompC[ComputeClient]
-        CE --> BC[BillingClient]
-    end
-
-    subgraph Monitoring
-        MMS[MigrationMonitoringService]
-    end
-
-    PS --> RT
-    PS --> OS
-    PS --> RS
-    PS --> KI
-    PS --> CRI
-    PS --> SecC
-    PS --> TM
-    PS --> CE
-    PS --> MMS
-```
 
 ## Key Features
 
@@ -144,3 +117,10 @@ For support and queries, please open an issue in the project's GitHub issue trac
 ## Acknowledgments
 This project is made possible by the contributions of the open-source community and the use of Google Cloud Platform services.
 
+## License
+
+Distributed under the MIT License. See [LICENSE](https://github.com/uakbr/GCP-MigrationPro/blob/main/LICENSE.md) for more information.
+
+## Authors
+
+* **Umair Akbar** - [Senior Cloud Architect](https://github.com/uakbr/) - *Developed GCP MigrationPro tool*
