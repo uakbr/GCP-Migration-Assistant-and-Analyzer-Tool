@@ -1,0 +1,38 @@
+# This file lists the Python package dependencies for the GCP Migration Assistant and Analyzer Tool.
+
+# Cloud services and APIs
+google-cloud-storage==1.42.0
+google-cloud-bigquery==2.30.1
+google-cloud-compute==0.4.0
+google-cloud-container==2.7.1
+google-cloud-database-migration==1.1.1
+
+# Data transfer and synchronization
+google-resumable-media==1.3.3
+
+# Containerization and orchestration
+docker==5.0.0
+kubernetes==18.20.0
+
+# Network and security
+google-auth==2.3.3
+requests==2.26.0
+
+# Planning and assessment
+numpy==1.21.4
+pandas==1.3.4
+
+# Monitoring and reporting
+prometheus-client==0.11.0
+
+# Rollback and error handling
+tenacity==8.0.1
+
+# User training and documentation
+mkdocs==1.2.3
+
+# General utilities
+click==8.0.3
+PyYAML==6.0
+Flask==2.0.2
+Jinja2==3.0.3
